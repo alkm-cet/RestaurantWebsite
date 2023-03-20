@@ -1,0 +1,162 @@
+.Section2 {
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.section2dishescontainer {
+    /* border: 1px solid black; */
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    cursor: pointer;
+    border: 1px solid white;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px 5px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: all .3s ease;
+}
+
+.card:hover {
+    background-color: white;
+}
+
+.pricediv {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #101A24;
+    color: white;
+    border-radius: 50%;
+    top: -15%;
+    right: 5%;
+    font-size: 12px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.cardimg {
+    position: absolute;
+    width: 80%;
+    top: -30%;
+}
+
+/* ---------------------LEAFS */
+
+.leaff1 {
+    width: 15%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.leaff2 {
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+}
+
+.leaff3 {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.garlic{
+    width: 10%;
+    position: absolute;
+    top: 80%;
+    right: 15%;
+}
+
+/* ---------------------- BOTTOM */
+
+.section2bottomcontainer {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    gap: 50px;
+}
+
+/* ---------------LEFT */
+
+.section2bottomleft {
+    width: 30%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.section2bottombigimg{
+    width: 100%;
+}
+
+.greenleaf1{
+    position: absolute;
+    width: 15%;
+    top: 25%;
+}
+.greenleaf2{
+    position: absolute;
+    width:25%;
+    top: 25%;
+    right: -5%;
+}
+.greenleaf3{
+    position: absolute;
+    width: 25%;
+    bottom: 10%;
+    left: 10%;
+}
+.greenleaf4{
+    position: absolute;
+    width: 15%;
+    bottom: 10%;
+    right: 30%;
+}
+
+/* ----------------- right */
+
+.section2bottomright {
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

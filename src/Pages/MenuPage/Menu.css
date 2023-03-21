@@ -1,0 +1,158 @@
+.Menu {
+    width: 100%;
+    min-height: 1000px;
+
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 300px 0px;
+    background-color: rgba(238, 243, 248, 1);
+}
+
+@media(max-width:1268px) {
+    .Menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menuleftdiv {
+    width: 50%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1268px) {
+    .menuleftdiv {
+        width: 90%;
+    }
+}
+
+.menuleftdiv img {
+    width: 90%;
+}
+
+@media(max-width:1268px) {
+    .menuleftdiv img {
+        width: 100%;
+    }
+}
+
+
+.menuleftdiv h2 {
+    font-size: 50px;
+}
+
+@media(max-width:1268px) {
+    .menuleftdiv h2 {
+        text-align: center;
+    }
+}
+
+.menuleftdiv h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+@media(max-width:1268px) {
+    .menuleftdiv h1 {
+        text-align: center;
+    }
+}
+
+/* --------------RIGHT */
+
+.menurightdiv {
+    width: 40%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media(max-width:1268px) {
+    .menurightdiv {
+        width: 90%;
+    }
+}
+
+@media(max-width:768px) {
+    .menurightdiv {
+        flex-wrap: wrap;
+    }
+}
+
+.menurightdivright {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menurightdivleft {
+    padding: 100px 0px;
+    align-self: flex-end;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menucarddiv {
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 350px;
+
+    background-color: rgba(231, 234, 242, 1);
+    background-image: linear-gradient(rgba(238, 243, 248, 1), rgba(231, 234, 242, 1));
+
+    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.menucarddiv:hover {
+    scale: 1.05;
+    border: 1px solid gainsboro;
+}
+
+@media(max-width:467px) {
+    .menucarddiv:hover {
+        scale: 1;
+    }
+}
+
+
+.menucarddiv img {
+    width: 80%;
+}
+
+.carddivmid {
+    font-family: 'Rubik', sans-serif;
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    width: 100%;
+}
+
+.carddivbottom {
+    font-family: 'Rubik', sans-serif;
+    padding: 0px 20px;
+    /* border: 1px solid black; */
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,66 @@
+.Section4 {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 200px 0px;
+    position: relative;
+
+    gap: 50px;
+}
+
+.Section4 h1 {
+    font-size: 60px;
+}
+
+.Section4 p {
+    width: 30%;
+    text-align: center;
+}
+
+.pan {
+    position: absolute;
+    width: 30%;
+    top: 5%;
+    left: 0;
+}
+
+.swipercontainer {
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid black; */
+
+    display: flex;
+    align-items: center;
+}
+
+.testamonial {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 100px 30px;
+    background-color: white;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    gap: 10px;
+    text-align: center;
+}
+
+.testamonial small {
+    width: 70%;
+}
+
+.person {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    /* position: absolute; */
+    /* top: -10%; */
+    z-index: 1000;
+}

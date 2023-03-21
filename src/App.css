@@ -19,6 +19,16 @@
   overflow: auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #EA6D27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #101A24;
+  border-radius: 10px;
+}
+
 .navContainer {
   /* border: 1px solid black; */
   width: 100%;
@@ -63,6 +73,82 @@
   transition: all .3s ease;
 }
 
-.bookBTN:hover{
-  border-radius:5px 25px 5px 25px ;
+.bookBTN:hover {
+  border-radius: 5px 25px 5px 25px;
+}
+
+/* -----------------FOOTER */
+.footercontainer {
+  background-color: white;
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footertop {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  color: white;
+  padding: 20px 0;
+
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  position: absolute;
+  top: -20%;
+}
+
+.footertop h1 {
+  font-size: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.footertopdiv {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.footertopdiv input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.footertopdiv button {
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  background-color: rgba(234, 109, 39, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  position: absolute;
+  right: 2.5px;
+  transition: all .3s ease;
+}
+
+.footertopdiv button:hover{
+  color: black;
 }

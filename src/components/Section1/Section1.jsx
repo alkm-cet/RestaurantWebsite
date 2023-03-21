@@ -11,9 +11,9 @@ import leaf3 from '../../img/section1leaf3.png'
 function Section1() {
     return (
         <div className='Section1'>
-            <img src={circulartext} alt="" className="section1leftcircularIMG" />
             <div className="section1left">
-                <h1>We peovide the best food for you</h1>
+            <img src={circulartext} alt="" className="section1leftcircularIMG" />
+                <h1>We provide the best food for you</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolorum consequatur quod repudiandae, aliquid dolor

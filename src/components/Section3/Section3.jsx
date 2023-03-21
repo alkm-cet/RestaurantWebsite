@@ -3,13 +3,15 @@ import './Section3.css';
 import bigimg from '../../img/chef.png'
 import check from '../../img/check.png'
 import garlic from '../../img/garlic.png'
+import onion from '../../img/onion.png'
 
 function Section3() {
     return (
         <div className='Section3'>
             <img src={garlic} alt="" className='section3garlic' />
+            <img src={onion} alt="" className='section3onion' />
             <div className="section3left">
-                <h1 style={{ fontSize: '60px' }}>Our Expects Chef</h1>
+                <h1>Our Expects Chef</h1>
                 <p style={{ fontWeight: '200' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quia autem deleniti laborum modi rerum aliquid fugiat
                     ratione, assumenda eaque quas.

@@ -11,6 +11,27 @@
     padding: 100px 0;
 }
 
+@media(max-width:900px) {
+    .Section2 {
+        gap: 100px;
+    }
+}
+
+.Section2 h1 {
+    font-size: 60px;
+}
+
+@media(max-width:768px) {
+    .Section2 h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.Section2 p {
+    text-align: center;
+}
+
 .section2dishescontainer {
     /* border: 1px solid black; */
     width: 100%;
@@ -20,6 +41,19 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media(max-width:900px) {
+    .section2dishescontainer {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:490px) {
+    .section2dishescontainer {
+        gap: 100px;
+    }
 }
 
 .card {
@@ -94,7 +128,7 @@
     right: 50%;
 }
 
-.garlic{
+.garlic {
     width: 10%;
     position: absolute;
     top: 80%;
@@ -113,6 +147,12 @@
     gap: 50px;
 }
 
+@media(max-width:1268px) {
+    .section2bottomcontainer {
+        flex-direction: column;
+    }
+}
+
 /* ---------------LEFT */
 
 .section2bottomleft {
@@ -121,28 +161,38 @@
     position: relative;
 }
 
-.section2bottombigimg{
+@media(max-width:1268px) {
+    .section2bottomleft {
+        width: 60%;
+    }
+}
+
+
+.section2bottombigimg {
     width: 100%;
 }
 
-.greenleaf1{
+.greenleaf1 {
     position: absolute;
     width: 15%;
     top: 25%;
 }
-.greenleaf2{
+
+.greenleaf2 {
     position: absolute;
-    width:25%;
+    width: 25%;
     top: 25%;
     right: -5%;
 }
-.greenleaf3{
+
+.greenleaf3 {
     position: absolute;
     width: 25%;
     bottom: 10%;
     left: 10%;
 }
-.greenleaf4{
+
+.greenleaf4 {
     position: absolute;
     width: 15%;
     bottom: 10%;
@@ -159,4 +209,21 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media(max-width:1268px) {
+    .section2bottomright {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.section2h1 {
+    font-size: 60px;
+}
+
+@media(max-width:1268px) {
+    .section2h1 {
+        font-size: 35px;
+    }
 }

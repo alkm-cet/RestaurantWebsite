@@ -28,7 +28,7 @@ function Section2() {
             <img src={leaf3} alt="" className="leaff3" />
             <img src={garlic} alt="" className="garlic" />
 
-            <h1 style={{ fontSize: '60px' }}>Our Special Dishes</h1>
+            <h1>Our Special Dishes</h1>
 
             <p style={{ fontSize: '12px', }}>Lorem ipsum dolor sit amet, <br /> consectetur adipisicing
                 elit. Molestias, soluta.
@@ -86,7 +86,7 @@ function Section2() {
                 </div>
 
                 <div className="section2bottomright">
-                    <h1 style={{ fontSize: '60px' }}>Welcome to Our Restaurant</h1>
+                    <h1 className='section2h1'>Welcome to Our Restaurant</h1>
 
                     <p style={{ fontWeight:'200' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorum consequatur quod repudiandae, aliquid dolor

@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px 200px 0px;
+    padding: 100px 0px 300px 0px;
     position: relative;
 
     gap: 50px;
@@ -13,11 +13,25 @@
 
 .Section4 h1 {
     font-size: 60px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .Section4 h1 {
+        font-size: 35px;
+    }
 }
 
 .Section4 p {
     width: 30%;
     text-align: center;
+}
+
+@media(max-width:768px) {
+    .Section4 p {
+        width: 90%;
+        font-size: 12px;
+    }
 }
 
 .pan {
@@ -34,6 +48,12 @@
 
     display: flex;
     align-items: center;
+}
+
+@media(max-width:768px) {
+    .swipercontainer {
+        width: 90%;
+    }
 }
 
 .testamonial {

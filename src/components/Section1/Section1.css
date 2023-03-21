@@ -1,4 +1,4 @@
-.Section1{
+.Section1 {
     width: 100%;
     height: auto;
     background-color: white;
@@ -10,26 +10,74 @@
     overflow: hidden;
 }
 
-.section1left{
+/* @media(max-width:768px) {
+    .Section1 {
+        gap: 50px;
+    }
+} */
+
+@media(max-width:768px) {
+    .Section1 {
+        flex-direction: column;
+        gap: 100px;
+        padding: 50px 0;
+    }
+}
+
+.section1left {
     position: relative;
     width: 35%;
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
-.section1left h1{
+@media(max-width:768px) {
+    .section1left {
+        width: 80%;
+    }
+}
+
+.section1left h1 {
     font-size: 70px;
 }
 
-.section1left p{
+@media(max-width:1267px) {
+    .section1left h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .section1left h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+
+
+.section1left p {
     width: 60%;
     font-weight: 200;
 }
 
-.section1buttondiv{
+@media(max-width:1267px) {
+    .section1left p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    .section1left p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section1buttondiv {
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,49 +86,64 @@
     gap: 20px;
 }
 
-.menuBTN{
+@media(max-width:1268px) {
+    .section1buttondiv {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.menuBTN {
     cursor: pointer;
     background-color: #101A24;
     color: white;
-    width: 120px;
-    height: 54px;
+    width: auto;
+    height: auto;
     border: none;
+    padding: 3% 5%;
 
-    border-radius: 20px 5px ;
+    border-radius: 20px 5px;
 }
 
-.menuBTN:hover{
-    border-radius: 5px 20px ;
+.menuBTN:hover {
+    border-radius: 5px 20px;
     transition: all .3s ease;
 }
 
-.bookatableBTN{
+.bookatableBTN {
     cursor: pointer;
     background-color: #EA6D27;
     color: white;
-    width: 167px;
-    height: 54px;
+    width: auto;
     border: none;
+    padding: 3% 5%;
 
-    border-radius: 20px 5px ;
+    border-radius: 20px 5px;
     transition: all .3s ease;
 }
 
-.bookatableBTN:hover{
-    border-radius: 5px 20px ;
+.bookatableBTN:hover {
+    border-radius: 5px 20px;
 }
 
 
-.section1leftcircularIMG{
+.section1leftcircularIMG {
     position: absolute;
     width: 15%;
     top: -120px;
     left: -50px;
 }
 
+@media(max-width:1267px) {
+    .section1leftcircularIMG {
+        display: none;
+    }
+}
+
+
 /* ----------------------------------- RIGHT */
 
-.section1right{
+.section1right {
     width: 35%;
     /* border: 1px solid black; */
 
@@ -91,12 +154,20 @@
     position: relative;
 }
 
-.section1rightbigIMG{
+@media(max-width:768px) {
+    .section1right {
+        width: 70%;
+    }
+}
+
+
+
+.section1rightbigIMG {
     width: 80%;
     z-index: 1;
 }
 
-.section1rightsmallimg{
+.section1rightsmallimg {
     width: 40%;
     position: absolute;
 
@@ -105,21 +176,23 @@
     z-index: 2;
 }
 
-.leaf1{
+.leaf1 {
     position: absolute;
 
     top: -10%;
     left: -15%;
     width: 50%;
 }
-.leaf2{
+
+.leaf2 {
     position: absolute;
     width: 50%;
 
     top: -15%;
     right: -10%;
 }
-.leaf3{
+
+.leaf3 {
     position: absolute;
     width: 40%;
 

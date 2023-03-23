@@ -13,7 +13,7 @@ function Menu() {
         <div className='Menu'>
             <div className="menuleftdiv">
                 <h2>Fresh and Healty</h2>
-                <h1>Delicious Salad</h1>
+                <h1>Our Special Menu</h1>
                 <p>We Made Fresh And Healty Foods</p>
                 <img src={cardimg5} alt="" />
             </div>

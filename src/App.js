@@ -12,6 +12,7 @@ import twitter from './img/twitter.png';
 //PAGES
 import Menu from './Pages/MenuPage/Menu';
 import Home from './Pages/HomePage/Home';
+import Gallery from './Pages/GalleryPage/Gallery';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       <div className="App">
 
         <div className="navContainer">
-          <img className='logo' src={logo} alt="" />
+        <Link to='/' style={{ textDecoration: 'none', color:'black' }}><img className='logo' src={logo} alt="" /></Link>
           <div className="navtitles">
 
             <div className="inforight" onClick={handleOpen}>
@@ -46,7 +47,7 @@ function App() {
             <div className={open == true ? 'toggleshow' : ' toggleclosed'}>
               <Link to='/' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Home</div></Link>
               <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Menu</div></Link>
-              <div className="pagetitles">Gallery</div>
+              <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Gallery</div></Link>
               <div className="pagetitles">About</div>
               <div className="pagetitles">Contact</div>
             </div>
@@ -58,6 +59,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Menu' element={<Menu />} />
+          <Route path='/Gallery' element={<Gallery />} />
         </Routes>
 
         <div className="footercontainer">
@@ -101,10 +103,11 @@ function App() {
 
             <div className="bottomdiv2">
               <h4>NAVIGATION</h4>
+              <Link to='/' style={{ textDecoration: 'none', color:'black' }}><p>Home</p></Link>
               <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><p>Menu</p></Link>
+              <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><p>Gallery</p></Link>
               <p>About us</p>
               <p>Contact us</p>
-              <p>Main dishes</p>
             </div>
 
             <div className="bottomdiv3">

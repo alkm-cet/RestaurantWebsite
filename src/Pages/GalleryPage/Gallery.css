@@ -16,6 +16,12 @@
     }
 }
 
+@media(max-width:468px) {
+    .Gallery {
+        padding: 100px 10px 150px 10px;
+    }
+}
+
 .Gallery h1 {
     font-size: 72px;
 }
@@ -136,8 +142,8 @@
     font-size: 30px;
     font-size: 5.5vw;
     font-weight: bolder;
-    /* backdrop-filter: grayscale(50%); */
-    color: #EA6D27;
+    backdrop-filter: blur(3px);
+    color: black;
     display: none;
 
     transition: all .5s ease;

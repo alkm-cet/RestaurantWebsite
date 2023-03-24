@@ -16,6 +16,12 @@
     }
 }
 
+@media(max-width:468px) {
+    .Menu {
+        padding: 100px 0px 150px 0px;
+    }
+}
+
 .menuleftdiv {
     width: 50%;
     /* border: 1px solid black; */

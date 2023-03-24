@@ -11,6 +11,12 @@
     gap: 50px;
 }
 
+@media(max-width:468px) {
+    .Section4 {
+        padding: 100px 0px 150px 0px;
+    }
+}
+
 .Section4 h1 {
     font-size: 60px;
     text-align: center;

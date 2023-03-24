@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Menu.css';
 import cardimg1 from '../../img/cardimg1.png'
 import cardimg2 from '../../img/cardimg2.png'
@@ -9,6 +9,13 @@ import cardimg6 from '../../img/cardimg6.png'
 import cardimg7 from '../../img/cardimg7.png'
 
 function Menu() {
+
+    const [color, setColor] = useState(false)
+
+    const handleClick = (e) => {
+        setColor(prev => !prev)
+        color ? e.target.style.color = 'red' : e.target.style.color = 'black'
+    }
     return (
         <div className='Menu'>
             <div className="menuleftdiv">
@@ -29,7 +36,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$12.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -42,7 +49,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$14.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -55,7 +62,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$12.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -71,7 +78,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$10.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -86,7 +93,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$15.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -101,7 +108,7 @@ function Menu() {
                         </div>
                         <div className="carddivbottom">
                             <p>$17.00</p>
-                            <span class="material-symbols-outlined">
+                            <span onClick={handleClick} className="material-symbols-outlined">
                                 favorite
                             </span>
                         </div>
@@ -114,7 +121,7 @@ function Menu() {
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

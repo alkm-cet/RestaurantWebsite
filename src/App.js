@@ -13,6 +13,8 @@ import twitter from './img/twitter.png';
 import Menu from './Pages/MenuPage/Menu';
 import Home from './Pages/HomePage/Home';
 import Gallery from './Pages/GalleryPage/Gallery';
+import ScrollToTop from './ScrollToTop';
+import About from './Pages/AboutPage/About';
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
   return (
 
     <Router>
+      <ScrollToTop/>
       <div className="App">
 
         <div className="navContainer">
@@ -48,7 +51,8 @@ function App() {
               <Link to='/' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Home</div></Link>
               <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Menu</div></Link>
               <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Gallery</div></Link>
-              <div className="pagetitles">About</div>
+              <Link to='/About' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">About Us</div></Link>
+              
               <div className="pagetitles">Contact</div>
             </div>
 
@@ -60,6 +64,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Menu' element={<Menu />} />
           <Route path='/Gallery' element={<Gallery />} />
+          <Route path='/About' element={<About />} />
         </Routes>
 
         <div className="footercontainer">
@@ -106,7 +111,7 @@ function App() {
               <Link to='/' style={{ textDecoration: 'none', color:'black' }}><p>Home</p></Link>
               <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><p>Menu</p></Link>
               <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><p>Gallery</p></Link>
-              <p>About us</p>
+              <Link to='/About' style={{ textDecoration: 'none', color:'black' }}><p>About us</p></Link>
               <p>Contact us</p>
             </div>
 

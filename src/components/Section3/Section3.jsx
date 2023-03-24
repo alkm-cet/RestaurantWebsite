@@ -4,6 +4,8 @@ import bigimg from '../../img/chef.png'
 import check from '../../img/check.png'
 import garlic from '../../img/garlic.png'
 import onion from '../../img/onion.png'
+//ROUTER
+import { Link } from 'react-router-dom';
 
 function Section3() {
     return (
@@ -48,7 +50,7 @@ function Section3() {
                     </div>
 
                     <div className="section1buttondiv">
-                        <button className="menuBTN">Menu</button>
+                        <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
                         <button className="bookatableBTN">Book a table</button>
                     </div>
 

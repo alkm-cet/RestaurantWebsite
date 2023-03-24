@@ -16,6 +16,8 @@ import greenleaf3 from '../../img/greenleaf3.png'
 import greenleaf4 from '../../img/greenleaf4.png'
 
 import garlic from '../../img/garlic.png'
+//ROUTER
+import { Link } from 'react-router-dom';
 
 
 
@@ -88,14 +90,15 @@ function Section2() {
                 <div className="section2bottomright">
                     <h1 className='section2h1'>Welcome to Our Restaurant</h1>
 
-                    <p style={{ fontWeight:'200' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p style={{ fontWeight: '200' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorum consequatur quod repudiandae, aliquid dolor
                         possimus veritatis quasi eveniet laborum libero quam,
                         odio dolore corrupti culpa.
                     </p>
 
                     <div className="section1buttondiv">
-                        <button className="menuBTN">Menu</button>
+
+                        <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
                         <button className="bookatableBTN">Book a table</button>
                     </div>
 

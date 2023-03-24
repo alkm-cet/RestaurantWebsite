@@ -1,0 +1,275 @@
+.About {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(238, 243, 248, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 300px 50px;
+    gap: 50px;
+}
+
+@media(max-width:1000px) {
+    .About {
+        padding: 50px 20px 300px 20px;
+    }
+}
+
+@media(max-width:468px) {
+    .About {
+        padding: 50px 10px 150px 10px;
+    }
+}
+
+
+.About h1 {
+    font-size: 72px;
+    text-align: center;
+}
+
+.aboutimg1 {
+    width: 60%;
+    height: auto;
+    align-self: flex-end;
+}
+
+.abouttop {
+    width: 60%;
+    height: 600px;
+    /* border: 1px solid black; */
+    position: relative;
+
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+@media(max-width:1000px) {
+    .abouttop {
+        width: 95%;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+.textdivtop {
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 30px;
+    color: white;
+    padding: 0px 30px;
+}
+
+@media(max-width:1268px) {
+    .textdivtop {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivtop h2 {
+    font-size: 50px;
+}
+
+@media(max-width:1268px) {
+    .textdivtop h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivtop p {
+    font-weight: 300;
+}
+
+/* -------------MID */
+
+.aboutmid {
+    width: 60%;
+    height: 600px;
+    /* border: 1px solid black; */
+    align-self: flex-start;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+@media(max-width:1000px) {
+    .aboutmid {
+        width: 95%;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+.textdivmid {
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid white; */
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 30px;
+    color: white;
+    padding: 0px 30px;
+}
+
+@media(max-width:1268px) {
+    .textdivmid {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivmid h2 {
+    font-size: 50px;
+}
+
+@media(max-width:1268px) {
+    .textdivmid h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivmid p {
+    font-weight: 300;
+}
+
+
+/* ---------------BOTTOM */
+
+.aboutbottom {
+    width: 60%;
+    height: 600px;
+    /* border: 1px solid black; */
+    align-self: flex-end;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+@media(max-width:1000px) {
+    .aboutbottom {
+        width: 95%;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+.textdivbottom {
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid black; */
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+
+    gap: 30px;
+    color: white;
+    padding: 0px 30px;
+}
+
+@media(max-width:1268px) {
+    .textdivbottom {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivbottom h2 {
+    font-size: 50px;
+}
+
+@media(max-width:1268px) {
+    .textdivbottom h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.textdivbottom p {
+    font-weight: 300;
+}
+
+/* --------------FIGURES */
+
+.figure1 {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: -50%;
+}
+
+@media(max-width:1000px) {
+    .figure1 {
+        top: -10%;
+        left: 0;
+    }
+}
+
+.figure2 {
+    position: absolute;
+
+    width: 45%;
+    position: absolute;
+    top: 20%;
+    right: -50%;
+    transform: scaleX(-1);
+}
+
+@media(max-width:1000px) {
+    .figure2 {
+        top: -10%;
+        right: 0;
+    }
+}
+
+.figure3 {
+    position: absolute;
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: -50%;
+}
+
+@media(max-width:1000px) {
+    .figure3 {
+        top: -10%;
+        left: 0;
+    }
+}

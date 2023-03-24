@@ -6,6 +6,7 @@ import smallimg from '../../img/section1smallimg.png'
 import leaf1 from '../../img/section1leaf1.png'
 import leaf2 from '../../img/section1leaf2.png'
 import leaf3 from '../../img/section1leaf3.png'
+import { Link } from 'react-router-dom';
 
 
 function Section1() {
@@ -22,7 +23,7 @@ function Section1() {
                 </p>
 
                 <div className="section1buttondiv">
-                    <button className="menuBTN">Menu</button>
+                <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
                     <button className="bookatableBTN">Book a table</button>
                 </div>
 

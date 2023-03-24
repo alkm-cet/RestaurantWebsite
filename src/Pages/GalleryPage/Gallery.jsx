@@ -11,7 +11,7 @@ function Gallery() {
     return (
         <div className='Gallery'>
 
-            <h1>GALLERY</h1>
+            <h1>Gallery</h1>
 
             <div class="wrapper">
                 <div class="onhover one">

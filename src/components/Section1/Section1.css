@@ -100,7 +100,7 @@
     width: auto;
     height: auto;
     border: none;
-    padding: 3% 5%;
+    padding: 15px 20px;
 
     border-radius: 20px 5px;
 }
@@ -116,7 +116,7 @@
     color: white;
     width: auto;
     border: none;
-    padding: 3% 5%;
+    padding: 15px 20px;
 
     border-radius: 20px 5px;
     transition: all .3s ease;

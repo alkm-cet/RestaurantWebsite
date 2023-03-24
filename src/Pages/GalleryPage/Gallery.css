@@ -18,7 +18,7 @@
 
 @media(max-width:468px) {
     .Gallery {
-        padding: 100px 10px 150px 10px;
+        padding: 50px 10px 150px 10px;
     }
 }
 
@@ -142,8 +142,9 @@
     font-size: 30px;
     font-size: 5.5vw;
     font-weight: bolder;
+    background-color: #101a2493;
     backdrop-filter: blur(3px);
-    color: black;
+    color: white;
     display: none;
 
     transition: all .5s ease;

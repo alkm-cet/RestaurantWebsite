@@ -1,0 +1,247 @@
+.Contact {
+    width: 100%;
+    min-height: 1000px;
+    background-color: rgba(238, 243, 248, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px 250px 50px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contactdiv {
+    width: 80%;
+    height: 600px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+    display: flex;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.774);
+
+    position: relative;
+}
+
+@media(max-width:1268px) {
+    .contactdiv {
+        width: 100%;
+    }
+}
+
+@media(max-width:1000px) {
+    .contactdiv {
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+/* ------------------LEAFS */
+.contactleaf1 {
+    width: 7%;
+    position: absolute;
+    bottom: -10%;
+    transform: rotate(-50deg);
+}
+
+.contactleaf2 {
+    width: 15%;
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+}
+
+.contactleaf3 {
+    width: 15%;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+}
+
+/* -----------------LEFT */
+
+.contactleft {
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+@media(max-width:1000px) {
+    .contactleft {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+}
+
+.contactleft h1 {
+    font-size: 50px;
+}
+
+@media(max-width:468px) {
+    .contactleft h1 {
+        font-size: 30px;
+    }
+}
+
+
+.info {
+    color: white;
+    /* border: 1px solid white; */
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width:1000px) {
+    .info {
+        width: 100%;
+        justify-content: center;
+
+    }
+}
+
+@media(max-width:468px) {
+    .info {
+        font-size: 13px;
+    }
+}
+
+/* -----------------RIGHT */
+
+.contactright {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    border-radius: 0px 10px 10px 0px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+@media(max-width:1268px) {
+    .contactright {
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding: 15px;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+@media(max-width:1000px) {
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.block {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+@media(max-width:1000px) {
+    .block {
+        width: 100%;
+    }
+}
+
+form input {
+    border: none;
+    border-bottom: 2px solid rgb(136, 136, 136);
+    width: 80%;
+    height: 30px;
+}
+
+@media(max-width:1000px) {
+    .form input {
+        width: 100%;
+    }
+}
+
+.formleft {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+}
+
+@media(max-width:1000px) {
+    .formleft {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.formright {
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:1000px) {
+    .formright {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sendmessageBTN {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    align-self: flex-end;
+    transition: all .3s ease;
+}
+
+.sendmessageBTN:hover {
+    scale: 1.05;
+}
+
+@media(max-width:1000px) {
+    .sendmessageBTN {
+        margin-top: 50px;
+    }
+}

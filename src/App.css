@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;300;400&family=Poppins:wght@200;300;500;600&family=Rubik:wght@300;400;500;600&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&family=Poppins:wght@200;300;400;500;600;800&family=Quicksand:wght@300;400;500;600;700&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,12 +45,12 @@
   }
 }
 
-@media(max-width:568px) {
+/* @media(max-width:568px) {
   .navContainer {
     gap: 20px;
     flex-direction: column;
   }
-}
+} */
 
 
 .logo {
@@ -82,10 +80,11 @@
 
 .pagetitles {
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 .pagetitles:hover {
-  text-decoration: underline;
+  font-size: 18px;
 }
 
 .bookBTN {
@@ -459,7 +458,7 @@
   border-radius: 100%;
 }
 
-/* --------------------- TOGGLEMENU*/
+/* ------------------------------------------- TOGGLEMENU*/
 
 .inforight {
   /* border: 1px solid black; */
@@ -479,22 +478,35 @@
 
 @media (max-width:568px) {
   .inforight {
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
-
-
 .toggleshow {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
   width: 100%;
-  /* border: 1px solid black; */
-  height: auto;
-  max-height: 9999px;
+  /* height: auto;
+  max-height: 9999px; */
+  background-color: #101a24bb;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 35%;
+  font-size: 20px;
+
+}
+
+@media (min-width:768px) {
+  .toggleshow {
+    display: none;
+  }
 }
 
 .toggleclosed {
@@ -511,7 +523,7 @@
 
 @media (max-width:768px) {
   .toggleclosed {
-    gap: 20px;
+    /* gap: 20px;
     width: 100%;
     background-color: white;
     position: absolute;
@@ -519,7 +531,7 @@
 
 
     height: auto;
-    max-height: 9999px;
+    max-height: 9999px; */
     display: none;
   }
 }

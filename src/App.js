@@ -15,6 +15,7 @@ import Home from './Pages/HomePage/Home';
 import Gallery from './Pages/GalleryPage/Gallery';
 import ScrollToTop from './ScrollToTop';
 import About from './Pages/AboutPage/About';
+import Contact from './Pages/ContactPage/Contact';
 
 
 function App() {
@@ -29,11 +30,11 @@ function App() {
   return (
 
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <div className="App">
 
         <div className="navContainer">
-        <Link to='/' style={{ textDecoration: 'none', color:'black' }}><img className='logo' src={logo} alt="" /></Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><img className='logo' src={logo} alt="" /></Link>
           <div className="navtitles">
 
             <div className="inforight" onClick={handleOpen}>
@@ -48,12 +49,11 @@ function App() {
             </div>
 
             <div className={open == true ? 'toggleshow' : ' toggleclosed'}>
-              <Link to='/' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Home</div></Link>
-              <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Menu</div></Link>
-              <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">Gallery</div></Link>
-              <Link to='/About' style={{ textDecoration: 'none', color:'black' }}><div className="pagetitles">About Us</div></Link>
-              
-              <div className="pagetitles">Contact</div>
+              <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><div className="pagetitles">Home</div></Link>
+              <Link to='/Menu' style={{ textDecoration: 'none', color: 'black' }}><div className="pagetitles">Menu</div></Link>
+              <Link to='/Gallery' style={{ textDecoration: 'none', color: 'black' }}><div className="pagetitles">Gallery</div></Link>
+              <Link to='/About' style={{ textDecoration: 'none', color: 'black' }}><div className="pagetitles">About Us</div></Link>
+              <Link to='/Contact' style={{ textDecoration: 'none', color: 'black' }}><div className="pagetitles">Contact</div></Link>
             </div>
 
           </div>
@@ -65,6 +65,7 @@ function App() {
           <Route path='/Menu' element={<Menu />} />
           <Route path='/Gallery' element={<Gallery />} />
           <Route path='/About' element={<About />} />
+          <Route path='/Contact' element={<Contact />} />
         </Routes>
 
         <div className="footercontainer">
@@ -108,11 +109,11 @@ function App() {
 
             <div className="bottomdiv2">
               <h4>NAVIGATION</h4>
-              <Link to='/' style={{ textDecoration: 'none', color:'black' }}><p>Home</p></Link>
-              <Link to='/Menu' style={{ textDecoration: 'none', color:'black' }}><p>Menu</p></Link>
-              <Link to='/Gallery' style={{ textDecoration: 'none', color:'black' }}><p>Gallery</p></Link>
-              <Link to='/About' style={{ textDecoration: 'none', color:'black' }}><p>About us</p></Link>
-              <p>Contact us</p>
+              <Link to='/' style={{ textDecoration: 'none', color: 'black' }}><p>Home</p></Link>
+              <Link to='/Menu' style={{ textDecoration: 'none', color: 'black' }}><p>Menu</p></Link>
+              <Link to='/Gallery' style={{ textDecoration: 'none', color: 'black' }}><p>Gallery</p></Link>
+              <Link to='/About' style={{ textDecoration: 'none', color: 'black' }}><p>About us</p></Link>
+              <Link to='/Contact' style={{ textDecoration: 'none', color: 'black' }}><p>Contact us</p></Link>
             </div>
 
             <div className="bottomdiv3">

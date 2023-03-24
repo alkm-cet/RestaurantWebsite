@@ -13,6 +13,13 @@
     background-repeat: no-repeat;
 }
 
+@media(max-width:468px) {
+    .Contact {
+        padding: 50px 20px 150px 20px;
+    }
+}
+
+
 
 .contactdiv {
     width: 80%;

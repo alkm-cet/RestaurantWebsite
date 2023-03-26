@@ -16,6 +16,7 @@ import Gallery from './Pages/GalleryPage/Gallery';
 import ScrollToTop from './ScrollToTop';
 import About from './Pages/AboutPage/About';
 import Contact from './Pages/ContactPage/Contact';
+import Booking from './Pages/BookingPage/Booking';
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
             </div>
 
           </div>
-          <button className='bookBTN'>Book a Table</button>
+          <Link to='/Booking' style={{ textDecoration: 'none', color: 'black' }}><button className='bookBTN'>Book a Table</button></Link>
         </div>
 
         <Routes>
@@ -66,6 +67,7 @@ function App() {
           <Route path='/Gallery' element={<Gallery />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/Booking' element={<Booking />} />
         </Routes>
 
         <div className="footercontainer">

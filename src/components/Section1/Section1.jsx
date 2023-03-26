@@ -13,7 +13,7 @@ function Section1() {
     return (
         <div className='Section1'>
             <div className="section1left">
-            <img src={circulartext} alt="" className="section1leftcircularIMG" />
+                <img src={circulartext} alt="" className="section1leftcircularIMG" />
                 <h1>We provide the best food for you</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -23,8 +23,8 @@ function Section1() {
                 </p>
 
                 <div className="section1buttondiv">
-                <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
-                    <button className="bookatableBTN">Book a table</button>
+                    <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
+                    <Link to='/Booking' style={{ textDecoration: 'none', color: 'black' }}><button className="bookatableBTN">Book a table</button></Link>
                 </div>
 
             </div>

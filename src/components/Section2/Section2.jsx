@@ -99,7 +99,7 @@ function Section2() {
                     <div className="section1buttondiv">
 
                         <Link to='/Menu'><button className="menuBTN">Menu</button></Link>
-                        <button className="bookatableBTN">Book a table</button>
+                        <Link to='/Booking' style={{ textDecoration: 'none', color: 'black' }}><button className="bookatableBTN">Book a table</button></Link>
                     </div>
 
                 </div>
